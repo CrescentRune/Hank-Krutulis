@@ -1,0 +1,56 @@
+banner:
+  title: Hank Krutulis
+  image: img/Hank.jpg
+social:
+  gmail: henrykrutulis
+  github: CrescentRune
+skill:
+  enable: true
+  item:
+    - title: Ruby
+      logo: img/Ruby.png
+      description: Professional work on a Sinatra.rb backend interfaced with both MySQL and Microsoft SQLServer. I am also taking an online course covering Rails 5/6. Various scripts to boot.
+    - title: VueJS
+      logo: img/VueJS.png
+      description: Professional work on a VueJS frontend with BootstrapVue to deliver employee facing webapp utilities.
+    - title: NodeJS
+      logo: img/NodeJS.png
+      description: Professional experience within the Node ecosystem, as well as managing a MERN Stack application as part of a software engineering course project.
+    - title: C Language
+      logo: img/cpp.png
+      description: Practically all of my coursework! Including that in Data Structures and Algorithms, Computer Architecture, Operating Systems, Computer Security and Networks
+    - title: Python
+      logo: img/Python.png
+      description: Various small scripts, some CTF/ security oriented problems, as well a personal project involving RSS feeds I will be adding here soon!
+experience:
+  enable: true
+  item:
+    - title: Software Engineering Intern
+      logo: img/AndyMark.jpg
+      company: AndyMark Inc.
+      duration: May 2019 - August 2019
+    - title: Store Clerk
+      logo: img/Sages.png
+      company: The Sage's Shoppe Board Game Center
+      duration: June 2018 - January 2020
+extracurriculars:
+    enable: true
+    item: 
+      - role: IT Director
+        org: Purdue FIRST Programs
+        duration: August 2019 - Present
+        image: img/PFP.png
+      - role: Vice President, Head of Programming
+        org: FRC Team 461
+        image: img/FIRST.png
+        duration: May 2016 - May 2018 
+education:
+  enable: true
+  item:
+    - title: BS Computer Science
+      year: 2018 - Present
+      academy: Purdue University College of Science
+      image: img/Purdue.png
+
+
+  

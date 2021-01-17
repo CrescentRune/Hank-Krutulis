@@ -4,6 +4,7 @@ banner:
 social:
   gmail: henrykrutulis
   github: CrescentRune
+  linkedin: hank-krutulis-446627164
 skill:
   enable: true
   item:
@@ -40,7 +41,11 @@ extracurriculars:
         org: Purdue FIRST Programs
         duration: August 2019 - Present
         image: img/PFP.png
-      - role: Vice President, Head of Programming
+      - role: College of Science Ambassador
+        org: Purdue College of Science Recruiting
+        image: img/PurdueCOS.jpg
+        duration: February 2019 - Present
+      - role: Head of Programming
         org: FRC Team 461
         image: img/FIRST.png
         duration: May 2016 - May 2018 
@@ -48,9 +53,34 @@ education:
   enable: true
   item:
     - title: BS Computer Science
+      minor: Minor in German Language
       year: 2018 - Present
-      academy: Purdue University College of Science
+      academy: Purdue University
       image: img/Purdue.png
+portfolio:
+  enable: true
+  item:
+      - modalID: alchemy
+        path: CrescentRune/Alchemy-
+        project: Alchemy!
+        image: img/Beaker.png
+        technology: Swift iOS Development
+        status: Working on core features.
+        description: An ingredient optimizer for the Elder Scrolls V - Skyrim Alchemy system. Born out of a silly annoyance, this is designed to make the best out of your scarce alchemical ingredients in the world-famous RPG released in 2011.
+      - modalID: ltms
+        path: ltms-io/ltms-io
+        project: LTMS.io
+        image: 
+        technology: Mongo, Express, React, Node Stack
+        status: Finished.
+        description: A tournament management system targeted at providing the utilities and tools required to run a FIRST Lego Robotics Competition. These are some of the most numerous, and least complicated tournaments in FIRST. As such, our team's project was aimed at streamlining a lot of the technical hang-ups along the way.
+      - modalID: archivist
+        project: Archivist
+        image: img/Scroll.png
+        technology: Python, RSS Feeds
+        status: Needs a UI
+        description: A utility designed to grant easy access to creating offline repositories of media delivered via RSS feeds. Inspired by a strange desire to have my favorite podcasts on CD. This grew into some big plans about learning some UI design.
+
 
 
   

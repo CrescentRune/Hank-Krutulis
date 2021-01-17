@@ -21,25 +21,30 @@ theme = "hugo-developer-portfolio"
 # navigation
 [menu]
 
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight=1
-
-  [[menu.main]]
-  name = "Portfolio"
-  URL = "portfolio"
-  weight=2
+  # [[menu.main]]
+  # name = "About"
+  # URL = "#about"
+  # weight=1
 
   [[menu.main]]
   name = "Skills"
-  URL = "skills"
+  URL = "#skills"
+  weight=2
+
+ [[menu.main]]
+  name = "Experience"
+  URL = "#experience"
   weight=3
 
   [[menu.main]]
-  name = "Contact"
-  URL = "contact"
+  name = "Portfolio"
+  URL = "#portfolio"
   weight=4
+
+  [[menu.main]]
+  name = "Extracurriculars"
+  URL = "#extracurriculars"
+  weight=5
 
 [params]
 home = "Home"

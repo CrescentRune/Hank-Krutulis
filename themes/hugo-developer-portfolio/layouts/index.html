@@ -21,7 +21,25 @@
         <h1 class="uk-heading-large" style="text-align: center;">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
     </div>
 
+    
+    <div class="uk-container">
+      <div class="uk-flex-center" uk-grid>
+        <div class="uk-width-1-2 uk-width-1-3@s">
+          <img src="{{.Site.Data.homepage.banner.image | absURL }}" style="border-radius: 20px; box-shadow:5px 5px 5px #999;" alt="author">
+        </div>
+        <div class="uk-width-expand@m">
+            <p>Robotics Alumnus | Fascinated Hacker | Game Master Sleeper Agent</p>
 
+            <p>He/Him/His</p>
+            
+            <p>I am a motivated programmer who values empathy, individualism, and creativity. My belief in being a lifelong learner leads me to value all forms of experience as I continue to seek new opportunities and knowledge.</p>
+            
+            <p>Actively seeking full-time work for the summer of 2021. Open to part-time work in Spring/Fall of 2021.</p>
+        </div>
+      </div>
+  
+    </div>
+  
 </section>
 <!--
    _____                  _           _     _        _           _
@@ -79,7 +97,8 @@
 {{ if .Site.Data.homepage.about.enable }}
 <!-- about -->
 
-<section class="uk-margin-large-top">
+
+<section class="uk-margin-large-top" id="about">
     <div class="uk-container">
         <div class="uk-text-center">
             {{ with .Site.Data.homepage.about }}
@@ -101,7 +120,7 @@
 
 
 <!-- portfolio -->
-{{ if .Site.Data.homepage.portfolio.enable }}
+<!-- {{ if .Site.Data.homepage.portfolio.enable }}
 
 <section class="uk-margin-large-bottom uk-margin-large-top">
     <div class="uk-container">
@@ -129,7 +148,7 @@
         {{end}}
 
 </section>
-{{ end }}
+{{ end }} -->
 
 
 <!--
@@ -152,13 +171,15 @@
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
             <h2 class="uk-modal-title">{{.title}}</h2>
+            
         </div>
         <p>{{.description | safeHTML}}</p>
+        
     </div>
 </div>
 {{ end }}
 
-<section class="uk-margin-large-top uk-margin-large-bottom">
+<section class="uk-margin-large-top uk-margin-large-bottom" id="skills">
     <div class="uk-container">
         <h1 class="uk-heading-line uk-text-center uk-heading-medium"><span>Skills</span></h1>
 
@@ -207,7 +228,7 @@
 <!-- experience -->
 {{ if .Site.Data.homepage.experience.enable }}
 
-<section class="uk-margin-large-bottom">
+<section class="uk-margin-large-bottom" id="experience">
     <div class="uk-container">
         <h1 class="uk-heading-line  uk-heading-medium"><span>Experience</span></h1>
 
@@ -236,10 +257,63 @@
 
 <!-- ./experience -->
 
+<!-- Portfolio -->
+{{ if .Site.Data.homepage.portfolio.enable }}
+
+{{ range .Site.Data.homepage.portfolio.item }}
+<div id="{{ .modalID }}" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">{{.project}}</h2>
+            
+        </div>
+        <p>{{.description | safeHTML}}</p>
+        {{ if .path}}
+        <a href="https://github.com/{{ .path }}"> 
+            <img class="contain" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub" loading="lazy" style="width: 50px;"> 
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+
+    <section class="uk-margin-large-bottom" id="portfolio">
+        <div class="uk-container">
+            <h1 class="uk-heading-line  uk-heading-medium"><span>Portfolio</span></h1>
+
+            <div class="uk-child-width-1-4@m uk-child-width-1-2  uk-text-center uk-flex-center" uk-grid
+                style="padding-left: 20px; padding-right: 20px">
+
+                {{ range .Site.Data.homepage.portfolio.item }}
+                <div>
+                    <div class="uk-card uk-card-default uk-height-large" loading="lazy" style="cursor: pointer" 
+                        uk-toggle="target: #{{ .modalID }}">
+                        <div class="uk-card-media-top">
+                            <img class="contain experience" src="{{.image}}" alt="{{ .project }}" style="padding: 20px" loading="lazy">
+                        </div>
+                        <div class="uk-card-body" style="padding: initial">
+                            <div style="height: 5em">
+                                <h3 class="uk-card-title uk-heading-small">{{.project}}</h3>
+                            </div>
+                            <p style="height: 4em"><em>{{.technology}}</em></p>
+                            <p><b>{{.status}}</b></p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+    </section>
+
+{{ end }}
+<!-- ./Portfolio -->
+
+
 <!-- Extracurriculars -->
 {{ if .Site.Data.homepage.extracurriculars.enable }}
 
-    <section class="uk-margin-large-bottom">
+    <section class="uk-margin-large-bottom" id="extracurriculars">
         <div class="uk-container">
             <h1 class="uk-heading-line  uk-heading-medium"><span>Extracurriculars</span></h1>
 
@@ -268,6 +342,11 @@
 {{ end }}
 
 <!-- ./extracurriculars -->
+
+
+
+
+
 
 <!-- Certifications -->
 {{ if .Site.Data.homepage.certifications.enable }}
@@ -399,7 +478,7 @@
 -->
 {{ if .Site.Data.homepage.education.enable }}
 <!-- education -->
-<section class="uk-margin-xlarge-bottom">
+<section class="uk-margin-xlarge-bottom" id="education">
     <div class="uk-container">
 
         <h1 class="uk-heading-line uk-heading-medium  uk-margin-large-bottom"><span>Education</span></h1>
@@ -418,7 +497,7 @@
                         <div style="height: 5em">
                             <h3 class="uk-card-title">{{.academy}}</h3>
                         </div>
-                        <p style="height: 4em">{{.title}}</p>
+                        <p style="height: 4em; margin-bottom: 0px;">{{.title}}<br>{{.minor}}</p>
                         <p>{{.year}}</p>
                     </div>
                 </div>

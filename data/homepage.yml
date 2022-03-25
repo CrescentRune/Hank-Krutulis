@@ -77,12 +77,12 @@ portfolio:
         image: img/Beaker.png
         technology: Swift iOS Development
         status: Working on core features.
-        description: An ingredient optimizer for the Elder Scrolls V - Skyrim Alchemy system. Born out of a silly annoyance, this is designed to make the best out of your scarce alchemical ingredients in the world-famous RPG released in 2011.
+        description: An ingredient optimizer for the Elder Scrolls V - Skyrim's alchemy system. Born out of a silly annoyance, this is designed to make the best out of your scarce alchemical ingredients in the world-famous RPG released in 2011.
       - modalID: ltms
         path: ltms-io/ltms-io
         project: LTMS.io
         image: 
-        technology: Mongo, Express, React, Node Stack
+        technology: Mongo, Express, React, Node
         status: Finished.
         description: A tournament management system targeted at providing the utilities and tools required to run a FIRST Lego Robotics Competition. These are some of the most numerous, and least complicated tournaments in FIRST. As such, our team's project was aimed at streamlining a lot of the technical hang-ups along the way.
       - modalID: archivist

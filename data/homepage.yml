@@ -8,24 +8,35 @@ social:
 skill:
   enable: true
   item:
+    - title: Angular
+      logo: img/Angular.png
+      description: Two ground-up projects at FedEx, as well as a support and maintenance role on an application handling invoice payments.
+    - title: C Language
+      logo: img/cpp.png
+      description: Practically all of my coursework! Including that in Data Structures and Algorithms, Computer Architecture, Operating Systems, Computer Security and Networks. And we can't forget compilers...
+    - title: NodeJS
+      logo: img/NodeJS.png
+      description: Professional experience within the Node ecosystem, as well as managing a MERN Stack application as part of a software engineering course project.
+    - title: Python
+      logo: img/Python.png
+      description: Various small scripts, some CTF/ security oriented problems, as well a personal project involving RSS feeds.
     - title: Ruby
       logo: img/Ruby.png
       description: Professional work on a Sinatra.rb backend interfaced with both MySQL and Microsoft SQLServer. I am also taking an online course covering Rails 5/6. Various scripts to boot.
     - title: VueJS
       logo: img/VueJS.png
-      description: Professional work on a VueJS frontend with BootstrapVue to deliver employee facing webapp utilities.
-    - title: NodeJS
-      logo: img/NodeJS.png
-      description: Professional experience within the Node ecosystem, as well as managing a MERN Stack application as part of a software engineering course project.
-    - title: C Language
-      logo: img/cpp.png
-      description: Practically all of my coursework! Including that in Data Structures and Algorithms, Computer Architecture, Operating Systems, Computer Security and Networks
-    - title: Python
-      logo: img/Python.png
-      description: Various small scripts, some CTF/ security oriented problems, as well a personal project involving RSS feeds I will be adding here soon!
+      description: Professional work on a VueJS frontend with BootstrapVue to deliver employee facing webapp utilities at AndyMark Inc.
 experience:
   enable: true
   item:
+    - title: Full-stack Developer
+      logo: img/FedEx.png
+      company: FedEx Services
+      duration: January 2022 - Present
+    - title: IT Intern
+      logo: img/FedEx.png
+      company: FedEx Services
+      duration: May 2021 - August 2021
     - title: Software Engineering Intern
       logo: img/AndyMark.jpg
       company: AndyMark Inc.
@@ -54,7 +65,7 @@ education:
   item:
     - title: BS Computer Science
       minor: Minor in German Language
-      year: 2018 - Present
+      year: 2018 - 2021
       academy: Purdue University
       image: img/Purdue.png
 portfolio:
